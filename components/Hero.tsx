@@ -88,7 +88,7 @@ export function Hero() {
           custom={0}
           className="mb-6 font-body text-[11px] uppercase tracking-widest2 text-ivory/60"
         >
-          Atelier Noir &mdash; Est. 2016
+          Atelier Noir &mdash; Est. 2026
         </motion.span>
 
         <motion.h1
