@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #0b0b0c;
+}
+
+body {
+  background: #0b0b0c;
+  color: #f4f1ea;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #b8996b;
+  color: #0b0b0c;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0b0c;
+}
+::-webkit-scrollbar-thumb {
+  background: #3a3733;
+  border-radius: 999px;
+}
+
+.glass {
+  background: rgba(244, 241, 234, 0.06);
+  backdrop-filter: blur(20px) saturate(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(140%);
+  border: 1px solid rgba(244, 241, 234, 0.12);
+}
+
+.text-outline {
+  -webkit-text-stroke: 1px rgba(244, 241, 234, 0.35);
+  color: transparent;
+}
+
+.font-feature-ss01 {
+  font-feature-settings: "ss01" 1, "salt" 1;
+}
+
+.portfolio-swiper {
+  padding: 4rem 0 6rem !important;
+}
+
+.portfolio-swiper .swiper-slide {
+  width: 340px;
+  height: 460px;
+  transition: filter 0.4s ease;
+}
+
+.portfolio-swiper .swiper-slide:not(.swiper-slide-active) {
+  filter: brightness(0.45) saturate(0.7);
+}
+
+.portfolio-swiper .swiper-pagination-bullet {
+  background-color: #b8996b !important;
+  opacity: 0.4;
+}
+
+.portfolio-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
