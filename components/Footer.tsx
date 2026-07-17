@@ -24,12 +24,12 @@ export function Footer() {
         </motion.h2>
 
         <motion.a
-          href="inamu3174@gmail.com"
+          href="mailto:inamu3174@gmail.com"
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.7, delay: 0.15 }}
-          className="group mt-10 inline-flex items-center gap-2 rounded-full bg-ivory px-8 py-4 font-body text-xs uppercase text-ink transition-colors hover:bg-clay""
+          className="group mt-10 inline-flex items-center gap-2 rounded-full bg-ivory px-8 py-4 font-body text-xs uppercase text-ink transition-colors hover:bg-clay"
         >
           inamu3174@gmail.com
           <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
